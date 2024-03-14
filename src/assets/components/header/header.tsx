@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import { ClickAwayListener } from '@mui/base/ClickAwayListener'
 import './header.css'
 
-function Header() {
+function Header(): ReactNode {
     const [open, setOpen] = useState(false)
 
     const handleOpen = () => {
@@ -15,6 +15,9 @@ function Header() {
     return (
         <div className="header">
             <nav className="navbar">
+                <a href="#" className="navbar-item">
+                    Réservation
+                </a>
                 <ClickAwayListener onClickAway={handleClickAway}>
                     <div className="dropdown">
                         <button
@@ -42,9 +45,6 @@ function Header() {
                         ) : null}
                     </div>
                 </ClickAwayListener>
-                <a href="#" className="navbar-item">
-                    Réservation
-                </a>
             </nav>
             <div className="baseline">
                 <h1 className="baseline-name">L'Atelier</h1>

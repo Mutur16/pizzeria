@@ -1,17 +1,17 @@
 .header {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(56, 56, 56, 0.7)),
         url(../../img/bg-banner.png) center center / cover no-repeat;
     color: white;
-    height: 550px;
+    height: 350px;
 }
 
 .navbar {
     display: flex;
-    padding: 18px 20px;
-    font-size: 1.2rem;
+    padding: 9px 0;
+    font-size: 1.1rem;
     text-transform: uppercase;
     text-align: center;
-    justify-content: end;
+    justify-content: center;
 }
 
 .navbar-item {
@@ -22,7 +22,7 @@
 }
 
 .navbar-item:hover {
-    color: rgb(206, 113, 68);;
+    color: rgb(206, 113, 68);
 }
 
 .dropdown {
@@ -47,25 +47,49 @@
 }
 
 .navbar-menu > li:hover {
-    background-color: rgb(206, 113, 68);;
+    background-color: rgb(206, 113, 68);
 }
 
 .baseline {
-    padding: 50px 0 70px 0;
+    padding: 10px 0 0 0;
     text-align: center;
     line-height: 1;
 }
 
 .baseline-name {
     display: block;
-    font-size: 7rem;
+    font-size: 5rem;
     line-height: 1;
     font-weight: 600;
     font-family: 'dancing script';
 }
 
 .baseline-slogan {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     display: block;
     letter-spacing: 2px;
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+    .header {
+        height: 550px;
+    }
+
+    .navbar {
+        padding: 18px 20px;
+        font-size: 1.2rem;
+        justify-content: end;
+    }
+
+    .baseline {
+        padding: 50px 0 70px 0;
+    }
+
+    .baseline-name {
+        font-size: 7rem;
+    }
+
+    .baseline-slogan {
+        font-size: 1.8rem;
+    }
 }
