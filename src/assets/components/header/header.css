@@ -1,0 +1,71 @@
+.header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.7)),
+        url(../../img/bg-banner.png) center center / cover no-repeat;
+    color: white;
+    height: 550px;
+}
+
+.navbar {
+    display: flex;
+    padding: 18px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: end;
+}
+
+.navbar-item {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.navbar-item:hover {
+    color: rgb(206, 113, 68);;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.navbar-menu {
+    position: absolute;
+    list-style-type: none;
+    margin: 5px -5px;
+    padding: 0;
+    border: 1px solid gray;
+}
+
+.navbar-menu > li {
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.navbar-menu > li:hover {
+    background-color: rgb(206, 113, 68);;
+}
+
+.baseline {
+    padding: 50px 0 70px 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.baseline-name {
+    display: block;
+    font-size: 7rem;
+    line-height: 1;
+    font-weight: 600;
+    font-family: 'dancing script';
+}
+
+.baseline-slogan {
+    font-size: 1.8rem;
+    display: block;
+    letter-spacing: 2px;
+}
