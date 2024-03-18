@@ -12,6 +12,8 @@
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
+    max-width: 1024px;
+    margin: auto;
 }
 
 .navbar-item {
@@ -62,12 +64,19 @@
     line-height: 1;
     font-weight: 600;
     font-family: 'dancing script';
+    margin: 1.5rem 0 1rem 0;
+}
+
+.baseline-subtitle {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: rgb(206, 113, 68);
 }
 
 .baseline-slogan {
     font-size: 1.2rem;
-    display: block;
     letter-spacing: 2px;
+    margin-top: 2rem;
 }
 
 @media /*Desktop*/ (min-width: 1024px) {
@@ -89,7 +98,12 @@
         font-size: 7rem;
     }
 
+    .baseline-subtitle {
+        font-size: 5rem;
+    }
+
     .baseline-slogan {
         font-size: 1.8rem;
+        margin-top: 3.5rem;
     }
 }

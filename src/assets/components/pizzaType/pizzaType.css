@@ -1,0 +1,56 @@
+.pizza-container {
+    padding: 0 30px;
+}
+
+.pizza-small-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+
+    .pizza-type-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.pizza-type-title {
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.pizza-discover {
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 7px 18px;
+    align-self: center;
+    box-shadow: 5px 5px 5px gray;
+
+    &:hover {
+        background-color: rgb(206, 113, 68);
+        transition: ease-in-out 0.3s;
+    }
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+    .pizza-container {
+        padding: 0;
+    }
+
+    .pizza-small-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        .pizza-type-container {
+            width: 33%;
+            justify-content: space-between;
+        }
+    }
+
+    .pizza-type-title {
+        margin: 1rem auto;
+    }
+}

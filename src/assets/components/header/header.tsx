@@ -48,9 +48,10 @@ function Header(): ReactNode {
             </nav>
             <div className="baseline">
                 <h1 className="baseline-name">L'Atelier</h1>
-                <span className="baseline-slogan">
+                <span className="baseline-subtitle">- Pizza -</span>
+                <p className="baseline-slogan">
                     Plus qu'une simple pizza, une passion.
-                </span>
+                </p>
             </div>
         </div>
     )
