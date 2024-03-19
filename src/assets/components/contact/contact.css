@@ -1,0 +1,50 @@
+.contact {
+    padding: 0 30px;
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+.information-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 2rem 0;
+    gap: 1rem;
+
+    > li {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+.opening-hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    > li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+    .contact {
+        padding: 0;
+
+        .contact-container {
+            flex-direction: row;
+            gap: 0;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

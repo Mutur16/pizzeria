@@ -15,7 +15,7 @@ function Header(): ReactNode {
     return (
         <div className="header">
             <nav className="navbar">
-                <a href="#" className="navbar-item">
+                <a href="#contact" className="navbar-item">
                     Réservation
                 </a>
                 <ClickAwayListener onClickAway={handleClickAway}>
