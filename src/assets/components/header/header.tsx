@@ -1,58 +1,37 @@
-import { ReactNode, useState } from 'react'
-import { ClickAwayListener } from '@mui/base/ClickAwayListener'
+import { ReactNode, useEffect } from 'react'
 import './header.css'
 
 function Header(): ReactNode {
-    const [open, setOpen] = useState(false)
+    useEffect(() => {
+        const scrollToAnchor = () => {
+            const elements = document.querySelectorAll('#contact, #menu')
+            elements.forEach((element) => {
+                element.scrollIntoView({ behavior: 'smooth' })
+            })
+        }
 
-    const handleOpen = () => {
-        setOpen(!open)
-    }
+        if (window.location.hash) {
+            scrollToAnchor()
+        }
+    }, [])
 
-    const handleClickAway = () => {
-        setOpen(false)
-    }
     return (
         <div className="header">
-            <nav className="navbar">
-                <a href="#contact" className="navbar-item">
+            <nav className="navbar" id='navbar'>
+                <a href="/#contact" className="navbar-item">
                     Réservation
                 </a>
-                <ClickAwayListener onClickAway={handleClickAway}>
-                    <div className="dropdown">
-                        <button
-                            type="button"
-                            className="navbar-button navbar-item"
-                            onClick={handleOpen}
-                        >
-                            Menu
-                        </button>
-                        {open ? (
-                            <ul className="navbar-menu">
-                                <li>
-                                    <a href="#">Pizza</a>
-                                </li>
-                                <li>
-                                    <a href="#">Salade</a>
-                                </li>
-                                <li>
-                                    <a href="#">Dessert</a>
-                                </li>
-                                <li>
-                                    <a href="#">Boisson</a>
-                                </li>
-                            </ul>
-                        ) : null}
-                    </div>
-                </ClickAwayListener>
+                <a href="/menu#menu" className="navbar-item">
+                    Menu
+                </a>
             </nav>
-            <div className="baseline">
+            <a href="/" className="baseline">
                 <h1 className="baseline-name">L'Atelier</h1>
                 <span className="baseline-subtitle">- Pizza -</span>
                 <p className="baseline-slogan">
                     Plus qu'une simple pizza, une passion.
                 </p>
-            </div>
+            </a>
         </div>
     )
 }

@@ -1,10 +1,11 @@
-.contact {
-    padding: 0 30px;
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
 
-    .contact-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+    > img {
+        max-width: 22rem
     }
 }
 
@@ -19,6 +20,10 @@
         flex-direction: row;
         gap: 1rem;
         align-items: center;
+
+        &:hover {
+            color: rgb(206, 113, 68);
+        }
     }
 }
 
@@ -36,9 +41,18 @@
     }
 }
 
+@media /*Tablet*/ (min-width: 820px) {
+    .contact-container {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 @media /*Desktop*/ (min-width: 1024px) {
     .contact {
-        padding: 0;
+        font-size: 18px;
 
         .contact-container {
             flex-direction: row;

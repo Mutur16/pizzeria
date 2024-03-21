@@ -1,22 +1,18 @@
 .pizza-container {
-    padding: 0 30px;
-}
-
-.pizza-small-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 4rem;
-
-    .pizza-type-container {
-        display: flex;
-        flex-direction: column;
-    }
+    gap: 2rem;
 }
 
-.pizza-type-title {
-    margin: 0 auto;
-    max-width: fit-content;
+.pizza-type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > img {
+        width: 20rem;
+    }
 }
 
 .pizza-discover {
@@ -26,6 +22,7 @@
     width: fit-content;
     padding: 7px 18px;
     align-self: center;
+    margin: 1.5rem 0;
     box-shadow: 5px 5px 5px gray;
 
     &:hover {
@@ -36,17 +33,17 @@
 
 @media /*Desktop*/ (min-width: 1024px) {
     .pizza-container {
-        padding: 0;
-    }
-
-    .pizza-small-container {
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        margin-top: -3rem;
 
         .pizza-type-container {
             width: 33%;
             justify-content: space-between;
+
+            > img {
+                width: 90%;
+            }
         }
     }
 

@@ -3,6 +3,7 @@
         url(../../img/bg-banner.png) center center / cover no-repeat;
     color: white;
     height: 350px;
+    line-height: 1.625;
 }
 
 .navbar {
@@ -53,8 +54,8 @@
 }
 
 .baseline {
-    padding: 10px 0 0 0;
     text-align: center;
+    vertical-align: center;
     line-height: 1;
 }
 
@@ -68,6 +69,7 @@
 }
 
 .baseline-subtitle {
+    display: block;
     text-transform: uppercase;
     font-size: 3rem;
     color: rgb(206, 113, 68);
@@ -79,23 +81,22 @@
     margin-top: 2rem;
 }
 
-@media /*Desktop*/ (min-width: 1024px) {
-    .header {
-        height: 550px;
-    }
-
+@media /*Tablet*/ (min-width: 820px) {
     .navbar {
         padding: 18px 20px;
         font-size: 1.2rem;
         justify-content: end;
     }
+}
 
-    .baseline {
-        padding: 50px 0 70px 0;
+@media /*Desktop*/ (min-width: 1024px) {
+    .header {
+        height: 550px;
     }
 
     .baseline-name {
         font-size: 7rem;
+        margin-top: 4rem
     }
 
     .baseline-subtitle {

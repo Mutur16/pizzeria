@@ -7,7 +7,7 @@ import './contact.css'
 
 function Contact(): ReactNode {
     return (
-        <div className="contact" id="contact">
+        <div id="contact">
             <h2>Contact & Réservation</h2>
             <div className="contact-container">
                 <img
@@ -17,9 +17,9 @@ function Contact(): ReactNode {
                 <div className="contact-container-text">
                     <h3>Informations</h3>
                     <ul className='information-list'>
-                        <li><FaLocationDot />19 Rue Henri Barbusse, 95130 Franconville</li>
-                        <li><FaPhoneAlt />01 34 13 73 48</li>
-                        <li><MdAlternateEmail />atelierpizza95@gmail.com</li>
+                        <li><FaLocationDot /><a href="https://maps.app.goo.gl/hRyZKnfHqY6DQyLh9" target='blank'>19 Rue Henri Barbusse, 95130 Franconville</a></li>
+                        <li><FaPhoneAlt /><a href="tel:+33134137348">01 34 13 73 48</a></li>
+                        <li><MdAlternateEmail /><a href="mailto:atelierpizza95@gmail.com">atelierpizza95@gmail.com</a></li>
                     </ul>
                     <h3>Horaires d'ouverture</h3>
                     <ul className='opening-hours-list'>
