@@ -1,5 +1,5 @@
 import './collapse.css'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { FaArrowDown } from 'react-icons/fa'
 
 type PizzaContentProp = {
@@ -27,12 +27,17 @@ function Collapse({ item }: { item: PizzaProp }) {
         }
     }
 
+    useEffect(() => {
+        if (window.location.hash === `#${item.id}`) {
+            toggleCollapse()
+        }
+    }, [item.id])
+
     return (
-        <div>
+        <div id={item.id}>
             <div className="collapsible-header" onClick={toggleCollapse}>
                 <h3 className="collapsible-header-label">{item.label}</h3>
                 <FaArrowDown
-                    id="#"
                     className={`collapsible-arrow ${
                         isOpen ? 'turn-arrow' : ''
                     }`}

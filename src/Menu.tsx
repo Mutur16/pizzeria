@@ -8,8 +8,9 @@ import { menuDrink } from './assets/data/menuDrink'
 import { menuPizza } from './assets/data/menuPizza'
 import { menuSide } from './assets/data/menuSide'
 import './menu.css'
+import { ReactNode } from 'react'
 
-function Menu() {
+function Menu(): ReactNode {
     return (
         <>
             <Header />
@@ -41,12 +42,12 @@ function Menu() {
                 <div>
                     <h2>La Bruschetta</h2>
                     <div>
-                        <div className='bruschetta'>
+                        <div className="bruschetta">
                             <span>
                                 Tartine de pain frottée à l'ail, arrosée d'huile
                                 d'olive et garnie de divers ingrédients...
                             </span>
-                            <span className='item-price'>9,00€</span>
+                            <span className="item-price">9,00€</span>
                         </div>
                         <b>Demandez-nous la recette du moment !</b>
                     </div>
@@ -63,7 +64,9 @@ function Menu() {
                         <MenuItem item={item} key={item.id} />
                     ))}
                 </div>
-                <a href="#navbar"  className='arrow-up-container'><FaArrowUp className='arrow-up' /></a>
+                <a href="#navbar" className="arrow-up-container">
+                    <FaArrowUp className="arrow-up" />
+                </a>
             </div>
             <Footer />
         </>

@@ -3,21 +3,20 @@ import './header.css'
 
 function Header(): ReactNode {
     useEffect(() => {
-        const scrollToAnchor = () => {
-            const elements = document.querySelectorAll('#contact, #menu')
-            elements.forEach((element) => {
-                element.scrollIntoView({ behavior: 'smooth' })
-            })
+        const scrollToAnchor = (anchor: string) => {
+            const element = document.querySelector(anchor)!
+            element.scrollIntoView({ behavior: 'smooth' })
         }
 
         if (window.location.hash) {
-            scrollToAnchor()
+            scrollToAnchor(window.location.hash)
         }
+
     }, [])
 
     return (
         <div className="header">
-            <nav className="navbar" id='navbar'>
+            <nav className="navbar" id="navbar">
                 <a href="/#contact" className="navbar-item">
                     Réservation
                 </a>
