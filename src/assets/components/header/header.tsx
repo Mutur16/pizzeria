@@ -1,5 +1,6 @@
 import { ReactNode, useEffect } from 'react'
 import './header.css'
+import { Link } from 'react-router-dom'
 
 function Header(): ReactNode {
     useEffect(() => {
@@ -17,20 +18,20 @@ function Header(): ReactNode {
     return (
         <div className="header">
             <nav className="navbar" id="navbar">
-                <a href="/#contact" className="navbar-item">
+                <Link to="/#contact" className="navbar-item">
                     Réservation
-                </a>
-                <a href="/menu#menu" className="navbar-item">
+                </Link>
+                <Link to="/menu#menu" className="navbar-item">
                     Menu
-                </a>
+                </Link>
             </nav>
-            <a href="/" className="baseline">
+            <Link to="/" className="baseline">
                 <h1 className="baseline-name">L'Atelier</h1>
                 <span className="baseline-subtitle">- Pizza -</span>
                 <p className="baseline-slogan">
                     Plus qu'une simple pizza, une passion.
                 </p>
-            </a>
+            </Link>
         </div>
     )
 }
