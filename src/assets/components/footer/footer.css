@@ -1,0 +1,53 @@
+.footer {
+    background-color: #383838;
+    color: white;
+    line-height: 1.625;
+}
+
+.footer-container {
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container > div {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.footer-restaurant-name {
+    font-family: 'dancing script';
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+
+    .footer-container {
+        padding: 30px 0;
+    }
+
+    .footer-website-creator {
+        display: inline-block;
+        margin-bottom: 0.5 rem;
+    }
+
+    .underline {
+        display: block;
+        max-width: 0;
+        height: 1px;
+        background-color: white;
+        transition: max-width 0.7s;
+    }
+
+    .footer-website-creator:hover .underline {
+        max-width: 100%;
+    }
+}
+
+@media /*Tablet*/ (min-width: 768px) {
+
+}

@@ -1,0 +1,18 @@
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    .item-price {
+        margin-left: 0.8rem;
+        font-weight: bold;
+    }
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+    .item-container {
+        .item-price {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.collapsible-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+
+    .collapsible-arrow {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.turn-arrow {
+    transform: rotate(-180deg);
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    background-color: #f7f7f7;
+    border: solid 1px rgb(206, 113, 68);
+    border-radius: 5px;
+    padding: 0 1rem;
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+.collapsible-header-label {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+    .collapsible-header {
+        margin-bottom: 1rem;
+
+        .collapsible-arrow {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    .collapsible-content {
+        p {
+            width: 75%;
+            margin: 0;
+        }
+    }
+}

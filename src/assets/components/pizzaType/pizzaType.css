@@ -1,0 +1,53 @@
+.pizza-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+.pizza-type-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > img {
+        width: 20rem;
+    }
+}
+
+.pizza-discover {
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 7px 18px;
+    align-self: center;
+    margin: 1.5rem 0;
+    box-shadow: 5px 5px 5px gray;
+
+    &:hover {
+        background-color: rgb(206, 113, 68);
+        transition: ease-in-out 0.3s;
+    }
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+    .pizza-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: -3rem;
+
+        .pizza-type-container {
+            width: 33%;
+            justify-content: space-between;
+
+            > img {
+                width: 90%;
+            }
+        }
+    }
+
+    .pizza-type-title {
+        margin: 1rem auto;
+    }
+}

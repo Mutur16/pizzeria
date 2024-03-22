@@ -1,0 +1,39 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    > img {
+        border-bottom: solid 5px rgb(206, 113, 68);
+        max-width: 20rem;
+        align-self: center;
+    }
+}
+
+.about-text {
+    width: 100%;
+}
+
+@media /*Tablet*/ (min-width: 820px) {
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        > img {
+            width: 25%;
+        }
+    }
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+    .about {
+        > img {
+            width: 20%;
+        }
+    }
+
+    .about-text {
+        width: 70%;
+    }
+}

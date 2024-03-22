@@ -1,0 +1,94 @@
+.menu-container {
+    padding: 0 30px;
+    margin: 2rem auto 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.625;
+    font-size: 16px;
+}
+
+.menu-page-title {
+    font-size: 3.5rem;
+    font-family: 'dancing script';
+    text-align: center;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 3px;
+        background-color: rgb(206, 113, 68);
+    }
+}
+
+.pizza-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: -1rem;
+}
+
+.bruschetta {
+    display: flex;
+    justify-content: space-between;
+
+    .item-price {
+        font-weight: bold;
+    }
+}
+
+.item-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: -1rem;
+}
+
+.arrow-up-container {
+    align-self: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 2rem;
+
+    &:hover {
+    color: rgb(206, 113, 68);
+    transition: .3s
+    };
+
+    .arrow-up {
+        align-content: center;
+        padding: 5px;
+        width: 35px;
+        height: 35px
+    }
+}
+
+@media /*Desktop*/ (min-width: 1024px) {
+    .menu-container {
+        max-width: 720px;
+        margin: 4rem auto 6rem auto;
+        gap: 3rem;
+        font-size: 18px;
+    }
+
+    .menu-page-title {
+        font-size: 4rem;
+
+        &::after {
+            height: 4px;
+        }
+    }
+
+    .pizza-menu-container {
+        gap: 4rem;
+        margin-top: -3rem;
+    }
+
+    .item-menu-container {
+        gap: 1rem;
+        margin-top: -3rem;
+    }
+}
