@@ -14,7 +14,7 @@ function PizzaTypeContainer(): ReactNode {
                     <div className="pizza-type-container" key={index}>
                         <img src={pizza} alt="photo d'une pizza" />
                         <h3 className="pizza-type-title">{item.name}</h3>
-                        <p>{item.description}</p>
+                        <p>Lorem ipsum dolor sit amet...</p>
                         <Link to={item.link} className="pizza-discover">
                             Découvrir la carte
                         </Link>

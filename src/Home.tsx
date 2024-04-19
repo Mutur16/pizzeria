@@ -15,7 +15,7 @@ function Home(): ReactNode {
                 <Contact />
             </div>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d744.2939403816245!2d2.231722378462695!3d48.99448786658809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66711ffbeaaab%3A0xc14244a0cc0df19a!2sL&#39;atelier%20pizza%20Franconville!5e0!3m2!1sfr!2sfr!4v1710860152571!5m2!1sfr!2sfr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7424.210051493951!2d2.321180743912004!3d48.86098226386383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2c30000001%3A0xc219db09e1bfefc7!2sJardin%20des%20Tuileries!5e0!3m2!1sfr!2sfr!4v1713538787418!5m2!1sfr!2sfr"
                 width="100%"
                 height="450"
                 frameBorder="0"

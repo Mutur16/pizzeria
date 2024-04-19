@@ -138,7 +138,7 @@ export const menuPizza = [
                     'Crème fraîche, mozzarelle, blanc de poulet rôti, fromage de chèvre au romarin, miel et roquette',
             },
             {
-                name: "L'Atelier",
+                name: 'Lorem',
                 price: '14,60€ / 16,20€',
                 description:
                     'Crème de champignons, mozzarelle, blanc de poulet rôti aux épices, gorgonzola au mascarpone, graines de sésame et une pointe d’huile de truffe',

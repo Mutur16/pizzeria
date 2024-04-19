@@ -5,8 +5,13 @@
     align-items: center;
 
     > img {
-        max-width: 22rem
+        border-bottom: solid 5px rgb(206, 113, 68);
+        max-width: 32rem
     }
+}
+
+.contact-container-text {
+    width: 35%
 }
 
 .information-list {

@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 import { FaPhoneAlt} from "react-icons/fa";
 import { FaLocationDot } from 'react-icons/fa6';
 import { MdAlternateEmail } from 'react-icons/md';
-import pizzeria from './../../img/pizzeria-front.png'
+import pizzeria from './../../img/pizzeria.istock.jpg'
 import './contact.css'
 
 function Contact(): ReactNode {
@@ -17,14 +17,14 @@ function Contact(): ReactNode {
                 <div className="contact-container-text">
                     <h3>Informations</h3>
                     <ul className='information-list'>
-                        <li><FaLocationDot /><a href="https://maps.app.goo.gl/hRyZKnfHqY6DQyLh9" target='blank'>19 Rue Henri Barbusse, 95130 Franconville</a></li>
-                        <li><FaPhoneAlt /><a href="tel:+33134137348">01 34 13 73 48</a></li>
-                        <li><MdAlternateEmail /><a href="mailto:atelierpizza95@gmail.com">atelierpizza95@gmail.com</a></li>
+                        <li><FaLocationDot /><a href="https://maps.app.goo.gl/3TLMKhhu6AF4CmMX8" target='blank'>Île-de-France</a></li>
+                        <li><FaPhoneAlt /><a href="tel:#">00 00 00 00 00</a></li>
+                        <li><MdAlternateEmail /><a href="mailto:alex.m-m@outlook.com">alex.m-m@outlook.com</a></li>
                     </ul>
                     <h3>Horaires d'ouverture</h3>
                     <ul className='opening-hours-list'>
                         <li>
-                            <span>Mardi à Jeudi & Samedi</span>
+                            <span>Mardi à Vendredi</span>
                             <span>
                                 11h30 - 14h30
                                 <hr />
@@ -32,7 +32,7 @@ function Contact(): ReactNode {
                             </span>
                         </li>
                         <li>
-                            <span>Vendredi</span>
+                            <span>Samedi</span>
                             <span>18h30 - 22h30</span>
                         </li>
                         <li>

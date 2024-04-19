@@ -1,32 +1,21 @@
-import { ReactNode, useEffect } from 'react'
+import { ReactNode } from 'react'
+import { HashLink } from 'react-router-hash-link' 
 import './header.css'
 import { Link } from 'react-router-dom'
 
 function Header(): ReactNode {
-    useEffect(() => {
-        const scrollToAnchor = (anchor: string) => {
-            const element = document.querySelector(anchor)!
-            element.scrollIntoView({ behavior: 'smooth' })
-        }
-
-        if (window.location.hash) {
-            scrollToAnchor(window.location.hash)
-        }
-
-    }, [])
-
     return (
         <div className="header">
             <nav className="navbar" id="navbar">
-                <Link to="/#contact" className="navbar-item">
+                <HashLink smooth to="/#contact" className="navbar-item">
                     Réservation
-                </Link>
-                <Link to="/menu#menu" className="navbar-item">
+                </HashLink>
+                <HashLink smooth to="/menu#menu" className="navbar-item">
                     Menu
-                </Link>
+                </HashLink>
             </nav>
             <Link to="/" className="baseline">
-                <h1 className="baseline-name">L'Atelier</h1>
+                <h1 className="baseline-name">Lorem</h1>
                 <span className="baseline-subtitle">- Pizza -</span>
                 <p className="baseline-slogan">
                     Plus qu'une simple pizza, une passion.
